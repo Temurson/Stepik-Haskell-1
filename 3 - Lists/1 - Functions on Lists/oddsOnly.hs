@@ -1,4 +1,10 @@
--- Implement function sign that returns 1 if the number is positive, (-1) is the number is negative
--- and 0 if the number is 0.
+-- Make a list of integers containing only odd elements from the initial list.
 
-sign x = if x > 0 then 1 else (if x < 0 then (-1) else 0)
+-- GHCi> oddsOnly [2,5,7,10,11,12]
+-- [5,7,11]
+-- Use functions odd and even from tha standard library.
+
+oddsOnly :: Integral a => [a] -> [a]
+oddsOnly [] = []
+oddsOnly (x : xs)  | odd x = x : oddsOnly xs
+                   | otherwise = oddsOnly xs

@@ -1,4 +1,14 @@
--- Implement 3 argument function lenVec3 to compute length of the 3-dimensional vector.
--- Function arguments are coordiantes of the vector. Use standard function sqrt to compute square root.
+-- Implement function isPalindrom determining if the argument is a palindrome.
 
-lenVec3 x y z =  sqrt (x^2 + y^2 + z^2)
+-- GHCi> isPalindrome "saippuakivikauppias"
+-- True
+-- GHCi> isPalindrome [1]
+-- True
+-- GHCi> isPalindrome [1, 2]
+-- False
+
+isPalindrome :: Eq a => [a] -> Bool
+isPalindrome [] = True
+isPalindrome [_] = True
+isPalindrome lst | head lst == last lst = isPalindrome $ init $ tail lst
+                 | otherwise            = False
