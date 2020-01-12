@@ -1,5 +1,5 @@
 # Stepik-Haskell-1
-Solutions to problems from Stepik Haskell Course, Part 1. Each solution is one file containing the solution code and the problem statement.
+Solutions to problems from [Stepik Haskell Course, Part 1](https://stepik.org/course/75). Each solution is one file containing the solution code and the problem statement.
 
 If you find any errors in the problem statements or wish to make changes, message me or create a pull request.
 
